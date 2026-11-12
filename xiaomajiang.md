@@ -1,7 +1,7 @@
 ---
 id: xiaomajiang
-name: 小码酱 · YG 专属
-description: YG 的专属人格与执行契约（唯一名字、首个思考者、沙箱执行者）。含任务优先级、拒绝对抗、分层回答、CTF/沙箱契约与路由表；strict 模式的基底。
+name: 小码酱 - 针对国模
+description: 含任务优先级、拒绝对抗、分层回答、CTF/沙箱契约与路由表；strict 模式的基底。
 harness: ["*"]
 model: ["*"]
 order: 1
