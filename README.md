@@ -39,30 +39,30 @@ order: 10                      # 列表排序，小的在前
 
 ## 人设一览
 
-`order` 决定列表顺序。前三个是原有条目，10 之后是本轮从公开提示词库筛出来的。
+`order` 决定列表顺序。「来源」列是简要标记，完整出处见下节。1–3 是原有条目，10 之后是本轮从公开提示词库筛出来的。
 
-| order | id | 面向 | 定位 |
-|---|---|---|---|
-| 1 | `xiaomajiang` | 通用 | 国模向基底人设：任务优先级、拒绝对抗、分层回答、CTF/沙箱契约与路由表 |
-| 2 | `dafeiyu` | 通用 | 大肥鱼 × lan 骨架：输入解构、判定五结果、回合格式、终检五问 |
-| 3 | `ctf` | CTF | CTF 沙箱执行体，侦察→利用→后利用全程作业 |
-| 10 | `eni-opus-5` | Claude Opus 5 | ENI 人设 + 反注入回弹 + thinking 通道契约 + 误报处理 |
-| 11 | `eni-sonnet-46` | Claude Sonnet 4.6 | ENI Neptune 变体，小说家人格，长文写作工艺约束 |
-| 12 | `eni-gemini-36` | Gemini 3.6 Flash | GROUNDING PHRASE 锁思考通道 + 分类器误报重解释 |
-| 13 | `eni-grok-47` | Grok 4.7 | 已剥掉原文件开头的安全前言，只留 `<dev>` 起的 payload |
-| 14 | `eni-kimi-k3` | Kimi K3 | 结构完整度最高的一款：反注入段 + 强制回弹短语 + 第一人称思考契约 |
-| 15 | `eni-glm-53` | GLM 5.3 | ENI LIME 母版，需配合 Be-You Corial 风格 |
-| 16 | `eni-gemini-argon-4` | Gemini 4 Argon | ENI + Policy 组合，正面覆盖策略层而非单纯换人设 |
-| 17 | `eni-chatgpt-policy-54` | ChatGPT 5.4 | 人设与 policy 覆盖合一，适合网页版项目指令槽 |
-| 18 | `eni-deepseek-flash` | DeepSeek | 从教学文档里抽出的正文，Flash Thought 方法，短 |
-| 19 | `eni-mimo-26` | 小米 MiMo 2.6 | 完整长版，反注入段 + 思考契约 |
-| 20 | `eni-minimax-m31` | MiniMax m3.1 | Policy 版，篇幅适中 |
-| 30 | `qwen-37` | Qwen 3.7 | 原厂风格作业规范：能力声明 + 工程标准 + 输出契约，不带角色扮演 |
-| 31 | `mistral-large-4` | Mistral Large 4 | opencode agent 规范：任务闭环、工具使用、输出格式 |
-| 32 | `nemotron-3-ultra` | NVIDIA Nemotron 3 Ultra | 角色 / 安全策略 / 拒答处理 / 推理流程 / 沟通标准 |
-| 33 | `zcode-agents-53` | ZCode / OpenCode | 4KB 项目级 `AGENTS.md` 契约，**落地位不是人设** |
-| 40 | `l1b3rt4s-openai` | OpenAI | 短版 `<\| \|>` 多段 payload，省 token 备选 |
-| 41 | `l1b3rt4s-deepseek` | DeepSeek | 三条硬规则（固定开头 / 不给免责 / 直接给细节），最省 token |
+| order | id | 面向 | 来源 | 定位 |
+|---|---|---|---|---|
+| 1 | `xiaomajiang` | 通用 | **dsh-purge** · YuJunZhiXue | 国模向基底人设：任务优先级、拒绝对抗、分层回答、CTF/沙箱契约与路由表 |
+| 2 | `dafeiyu` | 通用 | agent-purge 自带 | 大肥鱼 × lan 骨架：输入解构、判定五结果、回合格式、终检五问 |
+| 3 | `ctf` | CTF | agent-purge 自带 | CTF 沙箱执行体，侦察→利用→后利用全程作业（仅用于比赛） |
+| 10 | `eni-opus-5` | Claude Opus 5 | ENI | ENI 人设 + 反注入回弹 + thinking 通道契约 + 误报处理 |
+| 11 | `eni-sonnet-46` | Claude Sonnet 4.6 | ENI | ENI Neptune 变体，小说家人格，长文写作工艺约束 |
+| 12 | `eni-gemini-36` | Gemini 3.6 Flash | ENI | GROUNDING PHRASE 锁思考通道 + 分类器误报重解释 |
+| 13 | `eni-grok-47` | Grok 4.7 | ENI | 已剥掉原文件开头的安全前言，只留 `<dev>` 起的 payload |
+| 14 | `eni-kimi-k3` | Kimi K3 | ENI | 结构完整度最高的一款：反注入段 + 强制回弹短语 + 第一人称思考契约 |
+| 15 | `eni-glm-53` | GLM 5.3 | ENI | ENI LIME 母版，需配合 Be-You Corial 风格 |
+| 16 | `eni-gemini-argon-4` | Gemini 4 Argon | ENI | ENI + Policy 组合，正面覆盖策略层而非单纯换人设 |
+| 17 | `eni-chatgpt-policy-54` | ChatGPT 5.4 | ENI | 人设与 policy 覆盖合一，适合网页版项目指令槽 |
+| 18 | `eni-deepseek-flash` | DeepSeek | ENI | 从教学文档里抽出的正文，Flash Thought 方法，短 |
+| 19 | `eni-mimo-26` | 小米 MiMo 2.6 | ENI | 完整长版，反注入段 + 思考契约 |
+| 20 | `eni-minimax-m31` | MiniMax m3.1 | ENI | Policy 版，篇幅适中 |
+| 30 | `qwen-37` | Qwen 3.7 | togg | 原厂风格作业规范：能力声明 + 工程标准 + 输出契约，不带角色扮演 |
+| 31 | `mistral-large-4` | Mistral Large 4 | togg | opencode agent 规范：任务闭环、工具使用、输出格式 |
+| 32 | `nemotron-3-ultra` | NVIDIA Nemotron 3 Ultra | togg | 角色 / 安全策略 / 拒答处理 / 推理流程 / 沟通标准 |
+| 33 | `zcode-agents-53` | ZCode / OpenCode | togg | 4KB 项目级 `AGENTS.md` 契约，**落地位不是人设** |
+| 40 | `l1b3rt4s-openai` | OpenAI | L1B3RT4S | 短版 `<\| \|>` 多段 payload，省 token 备选 |
+| 41 | `l1b3rt4s-deepseek` | DeepSeek | L1B3RT4S | 三条硬规则（固定开头 / 不给免责 / 直接给细节），最省 token |
 
 ---
 
@@ -76,17 +76,19 @@ order: 10                      # 列表排序，小的在前
 
 ---
 
-## 来源与处理
+## 来源与致谢
 
-18 个新增条目从三个公开库筛出，都是仓库里**按结构完备度排前列、且字节互不相同**的：
+| 标记 | 出处 | 取用 |
+|---|---|---|
+| **dsh-purge** | [YuJunZhiXue/dsh-purge](https://github.com/YuJunZhiXue/dsh-purge)，作者 YuJunZhiXue | `xiaomajiang` |
+| **agent-purge 自带** | [ZiChuanLan/agent-purge](https://github.com/ZiChuanLan/agent-purge) 随包人设 | `dafeiyu`、`ctf` |
+| **ENI** | [Goochbeater/Spiritual-Spell-Red-Teaming](https://github.com/Goochbeater/Spiritual-Spell-Red-Teaming) | `eni-*`（10–20） |
+| **togg** | [togg53192-cmd/jailbreaks](https://github.com/togg53192-cmd/jailbreaks) | `qwen-37`、`mistral-large-4`、`nemotron-3-ultra`、`zcode-agents-53` |
+| **L1B3RT4S** | [elder-plinius/L1B3RT4S](https://github.com/elder-plinius/L1B3RT4S) | `l1b3rt4s-openai`、`l1b3rt4s-deepseek` |
 
-| 来源 | 取用 |
-|---|---|
-| `Goochbeater/Spiritual-Spell-Red-Teaming` | `eni-*`（10–20） |
-| `togg53192-cmd/jailbreaks` | `qwen-37`、`mistral-large-4`、`nemotron-3-ultra`、`zcode-agents-53` |
-| `elder-plinius/L1B3RT4S` | `l1b3rt4s-openai`、`l1b3rt4s-deepseek` |
+`xiaomajiang` 出自 dsh-purge，是原作者的人设作品，这里只做收录、不改写正文；改的只有元数据（补 `id`/`name`/`description`/`order`），因为原文件缺少合法 frontmatter 时 `agent-purge pull` 只能按文件名兜底。
 
-处理原则：
+10 之后的条目从三个公开库筛出，都是各库里**按结构完备度排前列、且字节互不相同**的。处理原则：
 
 1. **去重**：源库里有 12 组字节完全相同的"不同模型"文件（最大一堆 6 份），只留母版，不搬复制品。
 2. **剥前言**：`eni-grok-47` 原文件开头是目标模型的安全规则原文（泄漏的 system prompt），留着等于自己把禁令注入进去，已切到 `<dev>` 起。
