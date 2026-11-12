@@ -86,7 +86,7 @@ order: 10                      # 列表排序，小的在前
 | **togg** | [togg53192-cmd/jailbreaks](https://github.com/togg53192-cmd/jailbreaks) | `qwen-37`、`mistral-large-4`、`nemotron-3-ultra`、`zcode-agents-53` |
 | **L1B3RT4S** | [elder-plinius/L1B3RT4S](https://github.com/elder-plinius/L1B3RT4S) | `l1b3rt4s-openai`、`l1b3rt4s-deepseek` |
 
-`xiaomajiang` 出自 dsh-purge，是原作者的人设作品，这里只做收录、不改写正文；改的只有元数据（补 `id`/`name`/`description`/`order`），因为原文件缺少合法 frontmatter 时 `agent-purge pull` 只能按文件名兜底。
+`xiaomajiang` 出自 dsh-purge，是原作者的人设作品：本仓库原样收录，正文和 frontmatter 都没动过。`ctf` 是另一回事——它原来的 frontmatter 只有一行 `主人：岚`，中文键匹配不上解析规则 `^([A-Za-z0-9_-]+):`，整段 meta 会作废、只能按文件名兜底出 id，已补成合法字段。
 
 10 之后的条目从三个公开库筛出，都是各库里**按结构完备度排前列、且字节互不相同**的。处理原则：
 
